@@ -4,7 +4,7 @@ from . models import *
 from rest_framework.response import Response
 from . serializer import *
 from django.views.decorators.csrf import csrf_exempt
-
+ 
 # Create your views here.
 class PredictionView(APIView):
 

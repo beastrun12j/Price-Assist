@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from joblib import load
 
-
+ 
 # Create your models here.
 class Prediction(models.Model):
     carModel = models.CharField(max_length=100)
