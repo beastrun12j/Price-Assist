@@ -72,7 +72,7 @@ function MainForm(props) {
     const fetchDetails = async () => {
       try {
         const result = await axios.get(
-          "https://price-assist-backend.herokuapp.com/prediction/"
+          "https://price-assist.herokuapp.com/"
         );
         const data = await result.data;
         props.prediction(data);
@@ -110,7 +110,7 @@ function MainForm(props) {
   });
 
   const sendData = (values) => {
-    axios.post("https://price-assist-backend.herokuapp.com/prediction/", {
+    axios.post("https://price-assist.herokuapp.com/", {
       carModel: values.carModel,
       vehicleAge: values.vehicleAge,
       distanceTravelled: values.distanceTravelled,
